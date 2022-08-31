@@ -14,7 +14,7 @@ object App2 extends App {
 
   final case class ChildB(amount: Double) extends Parent
   object ChildB {
-    implicit val writes: Format[ChildB] =
+    implicit val format: Format[ChildB] =
       (__ \ "amount").format[Double].bimap(ChildB.apply, unlift(ChildB.unapply))
   }
 
