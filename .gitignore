@@ -1,0 +1,13 @@
+.DS_Store
+.bloop/
+.bsp/
+.idea/
+.metals/
+.vscode/
+metals.sbt
+project/project/
+target/
+logs/
+node_modules/
+.g8/
+*.swp
